@@ -1,0 +1,4 @@
+- object_id = f.object.persisted? ? f.object.object_id : "new_association_#{f.object.object_id}"
+= f.text_area field, id: "#{object_id}_input"
+
+%summernote-editor.text-input{input: "#{object_id}_input", toolbar: "#{object_id}_toolbar", id: "#{object_id}_editor"}

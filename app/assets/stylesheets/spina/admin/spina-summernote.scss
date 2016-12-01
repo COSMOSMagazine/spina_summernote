@@ -1,0 +1,99 @@
+@import "codemirror/codemirror";
+@import "codemirror/monokai";
+@import "spina";
+@import "summernote";
+@import "variables";
+@import "nav-divider";
+@import "reset-filter";
+@import "dropdowns";
+
+.note-editing-area {
+  @extend textarea;
+}
+
+summernote-editor {
+  display: none;
+}
+
+trix-toolbar {
+  display: none;
+}
+
+.note-editable {
+  ul {
+    list-style: disc;
+    padding-left: 40px;
+  }
+  max-height: 500px;
+  overflow: scroll;
+}
+
+.btn-group {
+  @extend .pull-left;
+}
+
+.btn-group.open {
+  &:after {
+    clear: both;
+  }
+}
+
+.btn.note-btn {
+  font-size: 14px;
+}
+
+.note-image-popover {
+  min-width: 200px;
+}
+
+.tooltip {
+  display: none;
+}
+
+.note-popover {
+  display: none;
+  position: absolute;
+}
+
+.note-editor.note-frame {
+  border: 0;
+}
+
+.note-toolbar.panel-heading {
+  padding: 0;
+}
+
+.note-handle,
+.note-statusbar {
+  display: none;
+}
+
+.btn {
+  @extend .button;
+}
+
+.panel-heading.note-toolbar .note-para .dropdown-menu {
+  min-width: 293px;
+  padding: 5px;
+  padding-bottom: 0;
+  border: 0;
+}
+
+.btn.dropdown-toggle {
+  padding-top: 7px;
+}
+
+.btn-group {
+  @extend .button-group;
+  position: relative;
+}
+
+.open {
+  .dropdown-menu {
+    display: block;
+  }
+}
+
+.dropdown-menu {
+  display: none;
+}
