@@ -9,6 +9,7 @@
 3. Add js to init summernote
   Example: [test/dummy/app/views/layout/admin.html.haml]()
 4. Override `app/views/spina/admin/shared/_rich_text_field.html.haml` with [test/dummy/app/views/layout/admin.html.haml]()
+5. Override `app/views/spina/admin/shared/photos/wysihtml5_insert.js.erb` with [test/dummy/app/views/layout/photos/wysihtml5_insert.js.erb]()
 
 ### Things that could be improved
 
