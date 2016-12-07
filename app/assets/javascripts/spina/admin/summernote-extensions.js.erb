@@ -181,8 +181,9 @@
                     tooltip: 'Insert Photo',
                     click: function() {
                         context.invoke('saveRange');
-                        editor_id = $(this).parents('.horizontal-form-content').children('textarea')[0].id;
-                        $.get("/admin/photos/wysihtml5_select/" + editor_id);
+                        editor_id = $(this).parents('.horizontal-form-content').children('textarea')[0].id,
+                        photos_path = "<%= Spina::Engine.routes.url_helpers.wysihtml5_select_admin_photos_path('') %>";
+                        $.get(photos_path + editor_id);
                     }
                 });
 
