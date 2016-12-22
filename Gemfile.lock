@@ -56,7 +56,7 @@ PATH
   remote: .
   specs:
     spina_summernote (0.0.1)
-      bootstrap (= 4.0.0.alpha3)
+      bootstrap (> 3)
       rails-assets-tether
       spina (~> 0.10)
       summernote-rails
@@ -109,10 +109,10 @@ GEM
     ancestry (2.2.2)
       activerecord (>= 3.0.0)
     arel (7.1.4)
-    autoprefixer-rails (6.5.3)
+    autoprefixer-rails (6.5.4)
       execjs
     bcrypt (3.1.11)
-    bootstrap (4.0.0.alpha3)
+    bootstrap (4.0.0.alpha5)
       autoprefixer-rails (>= 6.0.3)
       sass (>= 3.4.19)
     bourbon (3.2.4)

@@ -19,7 +19,7 @@ Gem::Specification.new do |s|
 
   s.add_dependency "spina", "~> 0.10"
   s.add_dependency 'summernote-rails'
-  s.add_dependency 'bootstrap', '4.0.0.alpha3'
+  s.add_dependency 'bootstrap', '> 3'
   s.add_dependency 'rails-assets-tether'
 
   s.add_development_dependency "sqlite3"
