@@ -13,8 +13,7 @@ gemspec
 # To use a debugger
 # gem 'byebug', group: [:development, :test]
 
-gem 'spina-template', git: 'https://github.com/denkGroot/spina-template', ref: '2dff5faf3963a164de607f5a985d7e6765779135'
-gem 'spina', git: 'https://github.com/denkGroot/Spina', ref: '9b0a778270ddfa86ba821138b9b90396d600861a'
+gem 'spina', git: 'https://github.com/denkGroot/Spina'
 
-gem 'globalize', git: 'https://github.com/globalize/globalize', ref: 'd4aa48ade91d5917a648a6f9cf1f824a537127e4'
-gem 'breadcrumbs_on_rails', git: 'https://github.com/seuros/breadcrumbs_on_rails', branch: 'patch-1'
+# gem 'globalize', git: 'https://github.com/globalize/globalize', ref: 'd4aa48ade91d5917a648a6f9cf1f824a537127e4'
+# gem 'breadcrumbs_on_rails', git: 'https://github.com/seuros/breadcrumbs_on_rails', branch: 'patch-1'

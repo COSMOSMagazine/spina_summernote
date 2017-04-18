@@ -1,9 +1,9 @@
-console.log('insert image start object_id:<%= params[:object_id] %>');
+console.log('insert image start object_id:<%= params[:page_part_id] %>');
 
 var img = document.createElement('img');
 img.src = '<%=  @photo.file.url %>';
 
-var editor = $('#<%= params[:object_id] %>');
+var editor = $('#<%= params[:page_part_id] %>');
 editor.summernote('restoreRange');
 editor.summernote('beforeCommand');
 editor.summernote('insertNode', img);

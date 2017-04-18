@@ -1,18 +1,14 @@
 GIT
   remote: https://github.com/denkGroot/Spina
-  revision: 9b0a778270ddfa86ba821138b9b90396d600861a
-  ref: 9b0a778270ddfa86ba821138b9b90396d600861a
+  revision: 7113899511c986155985f4297b65aa61cf99f69f
   specs:
-    spina (0.10.0)
-      activemodel-serializers-xml
+    spina (0.11.1)
       ancestry
       bcrypt
       breadcrumbs_on_rails
-      cancancan
       carrierwave
       coffee-rails
-      filters_spam
-      globalize
+      globalize (~> 5.1.0.beta1)
       haml-rails
       jquery-fileupload-rails
       jquery-rails
@@ -21,36 +17,7 @@ GIT
       rack-rewrite (~> 1.5.0)
       rails (>= 5.0)
       sass-rails
-      spina-template
       turbolinks (~> 5)
-
-GIT
-  remote: https://github.com/denkGroot/spina-template
-  revision: 2dff5faf3963a164de607f5a985d7e6765779135
-  ref: 2dff5faf3963a164de607f5a985d7e6765779135
-  specs:
-    spina-template (0.4.0)
-      bourbon (~> 3.2)
-      coffee-rails
-      jquery-fileupload-rails
-      neat (~> 1.5)
-
-GIT
-  remote: https://github.com/globalize/globalize
-  revision: d4aa48ade91d5917a648a6f9cf1f824a537127e4
-  ref: d4aa48ade91d5917a648a6f9cf1f824a537127e4
-  specs:
-    globalize (5.1.0)
-      activemodel (>= 4.2, < 5.1)
-      activerecord (>= 4.2, < 5.1)
-      request_store (~> 1.0)
-
-GIT
-  remote: https://github.com/seuros/breadcrumbs_on_rails
-  revision: c65bde38c24a74f3e04bded0da9d14db2404c45b
-  branch: patch-1
-  specs:
-    breadcrumbs_on_rails (2.3.1)
 
 PATH
   remote: .
@@ -58,50 +25,45 @@ PATH
     spina_summernote (0.0.1)
       bootstrap (> 3)
       rails-assets-tether
-      spina (~> 0.10)
+      spina (~> 0.11.1)
       summernote-rails
 
 GEM
   remote: https://rubygems.org/
   specs:
-    actioncable (5.0.0.1)
-      actionpack (= 5.0.0.1)
-      nio4r (~> 1.2)
+    actioncable (5.0.2)
+      actionpack (= 5.0.2)
+      nio4r (>= 1.2, < 3.0)
       websocket-driver (~> 0.6.1)
-    actionmailer (5.0.0.1)
-      actionpack (= 5.0.0.1)
-      actionview (= 5.0.0.1)
-      activejob (= 5.0.0.1)
+    actionmailer (5.0.2)
+      actionpack (= 5.0.2)
+      actionview (= 5.0.2)
+      activejob (= 5.0.2)
       mail (~> 2.5, >= 2.5.4)
       rails-dom-testing (~> 2.0)
-    actionpack (5.0.0.1)
-      actionview (= 5.0.0.1)
-      activesupport (= 5.0.0.1)
+    actionpack (5.0.2)
+      actionview (= 5.0.2)
+      activesupport (= 5.0.2)
       rack (~> 2.0)
       rack-test (~> 0.6.3)
       rails-dom-testing (~> 2.0)
       rails-html-sanitizer (~> 1.0, >= 1.0.2)
-    actionview (5.0.0.1)
-      activesupport (= 5.0.0.1)
+    actionview (5.0.2)
+      activesupport (= 5.0.2)
       builder (~> 3.1)
       erubis (~> 2.7.0)
       rails-dom-testing (~> 2.0)
-      rails-html-sanitizer (~> 1.0, >= 1.0.2)
-    activejob (5.0.0.1)
-      activesupport (= 5.0.0.1)
+      rails-html-sanitizer (~> 1.0, >= 1.0.3)
+    activejob (5.0.2)
+      activesupport (= 5.0.2)
       globalid (>= 0.3.6)
-    activemodel (5.0.0.1)
-      activesupport (= 5.0.0.1)
-    activemodel-serializers-xml (1.0.1)
-      activemodel (> 5.x)
-      activerecord (> 5.x)
-      activesupport (> 5.x)
-      builder (~> 3.1)
-    activerecord (5.0.0.1)
-      activemodel (= 5.0.0.1)
-      activesupport (= 5.0.0.1)
+    activemodel (5.0.2)
+      activesupport (= 5.0.2)
+    activerecord (5.0.2)
+      activemodel (= 5.0.2)
+      activesupport (= 5.0.2)
       arel (~> 7.0)
-    activesupport (5.0.0.1)
+    activesupport (5.0.2)
       concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (~> 0.7)
       minitest (~> 5.1)
@@ -109,36 +71,34 @@ GEM
     ancestry (2.2.2)
       activerecord (>= 3.0.0)
     arel (7.1.4)
-    autoprefixer-rails (6.5.4)
+    autoprefixer-rails (6.7.7.2)
       execjs
     bcrypt (3.1.11)
-    bootstrap (4.0.0.alpha5)
+    bootstrap (4.0.0.alpha6)
       autoprefixer-rails (>= 6.0.3)
       sass (>= 3.4.19)
-    bourbon (3.2.4)
-      sass (~> 3.2)
-      thor
-    builder (3.2.2)
-    cancancan (1.15.0)
-    carrierwave (0.11.2)
-      activemodel (>= 3.2.0)
-      activesupport (>= 3.2.0)
-      json (>= 1.7)
+    breadcrumbs_on_rails (3.0.1)
+    builder (3.2.3)
+    carrierwave (1.0.0)
+      activemodel (>= 4.0.0)
+      activesupport (>= 4.0.0)
       mime-types (>= 1.16)
-      mimemagic (>= 0.3.0)
     coffee-rails (4.2.1)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0, < 5.2.x)
     coffee-script (2.4.1)
       coffee-script-source
       execjs
-    coffee-script-source (1.11.1)
-    concurrent-ruby (1.0.2)
+    coffee-script-source (1.12.2)
+    concurrent-ruby (1.0.5)
     erubis (2.7.0)
     execjs (2.7.0)
-    filters_spam (0.5)
-    globalid (0.3.7)
-      activesupport (>= 4.1.0)
+    globalid (0.4.0)
+      activesupport (>= 4.2.0)
+    globalize (5.1.0.beta1)
+      activemodel (>= 4.2, < 5.1)
+      activerecord (>= 4.2, < 5.1)
+      request_store (~> 1.0)
     haml (4.0.7)
       tilt
     haml-rails (0.9.0)
@@ -147,24 +107,32 @@ GEM
       haml (>= 4.0.6, < 5.0)
       html2haml (>= 1.0.1)
       railties (>= 4.0.1)
-    html2haml (2.0.0)
+    html2haml (2.1.0)
       erubis (~> 2.7.0)
-      haml (~> 4.0.0)
-      nokogiri (~> 1.6.0)
+      haml (~> 4.0)
+      nokogiri (>= 1.6.0)
       ruby_parser (~> 3.5)
-    i18n (0.7.0)
+    i18n (0.8.1)
     jquery-fileupload-rails (0.4.7)
       actionpack (>= 3.1)
       railties (>= 3.1)
       sass (>= 3.2)
-    jquery-rails (4.2.1)
+    jquery-rails (4.3.1)
       rails-dom-testing (>= 1, < 3)
       railties (>= 4.2.0)
       thor (>= 0.14, < 2.0)
-    json (2.0.2)
-    kaminari (0.17.0)
-      actionpack (>= 3.0.0)
-      activesupport (>= 3.0.0)
+    kaminari (1.0.1)
+      activesupport (>= 4.1.0)
+      kaminari-actionview (= 1.0.1)
+      kaminari-activerecord (= 1.0.1)
+      kaminari-core (= 1.0.1)
+    kaminari-actionview (1.0.1)
+      actionview
+      kaminari-core (= 1.0.1)
+    kaminari-activerecord (1.0.1)
+      activerecord
+      kaminari-core (= 1.0.1)
+    kaminari-core (1.0.1)
     loofah (2.0.3)
       nokogiri (>= 1.5.9)
     mail (2.6.4)
@@ -173,57 +141,53 @@ GEM
     mime-types (3.1)
       mime-types-data (~> 3.2015)
     mime-types-data (3.2016.0521)
-    mimemagic (0.3.2)
-    mini_magick (4.5.1)
+    mini_magick (4.7.0)
     mini_portile2 (2.1.0)
-    minitest (5.10.0)
-    neat (1.8.0)
-      sass (>= 3.3)
-      thor (~> 0.19)
-    nio4r (1.2.1)
-    nokogiri (1.6.8.1)
+    minitest (5.10.1)
+    nio4r (2.0.0)
+    nokogiri (1.7.1)
       mini_portile2 (~> 2.1.0)
     rack (2.0.1)
     rack-rewrite (1.5.1)
     rack-test (0.6.3)
       rack (>= 1.0)
-    rails (5.0.0.1)
-      actioncable (= 5.0.0.1)
-      actionmailer (= 5.0.0.1)
-      actionpack (= 5.0.0.1)
-      actionview (= 5.0.0.1)
-      activejob (= 5.0.0.1)
-      activemodel (= 5.0.0.1)
-      activerecord (= 5.0.0.1)
-      activesupport (= 5.0.0.1)
+    rails (5.0.2)
+      actioncable (= 5.0.2)
+      actionmailer (= 5.0.2)
+      actionpack (= 5.0.2)
+      actionview (= 5.0.2)
+      activejob (= 5.0.2)
+      activemodel (= 5.0.2)
+      activerecord (= 5.0.2)
+      activesupport (= 5.0.2)
       bundler (>= 1.3.0, < 2.0)
-      railties (= 5.0.0.1)
+      railties (= 5.0.2)
       sprockets-rails (>= 2.0.0)
     rails-assets-tether (1.1.1)
-    rails-dom-testing (2.0.1)
+    rails-dom-testing (2.0.2)
       activesupport (>= 4.2.0, < 6.0)
-      nokogiri (~> 1.6.0)
+      nokogiri (~> 1.6)
     rails-html-sanitizer (1.0.3)
       loofah (~> 2.0)
-    railties (5.0.0.1)
-      actionpack (= 5.0.0.1)
-      activesupport (= 5.0.0.1)
+    railties (5.0.2)
+      actionpack (= 5.0.2)
+      activesupport (= 5.0.2)
       method_source
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
-    rake (11.3.0)
-    request_store (1.3.1)
-    ruby_parser (3.8.3)
+    rake (12.0.0)
+    request_store (1.3.2)
+    ruby_parser (3.9.0)
       sexp_processor (~> 4.1)
-    sass (3.4.22)
+    sass (3.4.23)
     sass-rails (5.0.6)
       railties (>= 4.0.0, < 6)
       sass (~> 3.1)
       sprockets (>= 2.8, < 4.0)
       sprockets-rails (>= 2.0, < 4.0)
       tilt (>= 1.1, < 3)
-    sexp_processor (4.7.0)
-    sprockets (3.7.0)
+    sexp_processor (4.9.0)
+    sprockets (3.7.1)
       concurrent-ruby (~> 1.0)
       rack (> 1, < 3)
     sprockets-rails (3.2.0)
@@ -234,14 +198,14 @@ GEM
     summernote-rails (0.8.2.0)
       railties (>= 3.1)
     thor (0.19.4)
-    thread_safe (0.3.5)
-    tilt (2.0.5)
+    thread_safe (0.3.6)
+    tilt (2.0.7)
     turbolinks (5.0.1)
       turbolinks-source (~> 5)
     turbolinks-source (5.0.0)
-    tzinfo (1.2.2)
+    tzinfo (1.2.3)
       thread_safe (~> 0.1)
-    websocket-driver (0.6.4)
+    websocket-driver (0.6.5)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.2)
 
@@ -249,12 +213,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  breadcrumbs_on_rails!
-  globalize!
   spina!
-  spina-template!
   spina_summernote!
   sqlite3
 
 BUNDLED WITH
-   1.13.6
+   1.14.6
