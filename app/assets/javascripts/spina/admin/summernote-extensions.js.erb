@@ -182,7 +182,7 @@
                     click: function() {
                         context.invoke('saveRange');
                         editor_id = $(this).parents('.horizontal-form-content').children('textarea')[0].id,
-                        photos_path = "<%= Spina::Engine.routes.url_helpers.photo_select_admin_photos_path('') %>";
+                        photos_path = "<%= Spina::Engine.routes.url_helpers.summernote_select_admin_photos_path('') %>";
                         $.get(photos_path + editor_id);
                     }
                 });

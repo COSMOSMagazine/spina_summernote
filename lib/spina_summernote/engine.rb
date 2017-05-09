@@ -8,6 +8,7 @@ module SpinaSummernote
         plugin.name = 'Summernote'
         plugin.namespace = 'summernote'
       end
+      require_relative '../../app/decorators/spina/admin/photos_controller_decorator'
     end
   end
 end
