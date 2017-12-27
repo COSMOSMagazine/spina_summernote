@@ -17,7 +17,7 @@ Gem::Specification.new do |s|
   s.files = Dir["{app,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
 
-  s.add_dependency "spina", "~> 0.11.1"
+  s.add_dependency "spina", "> 0.11.1"
   s.add_dependency 'summernote-rails'
   s.add_dependency 'bootstrap', '> 3'
   s.add_dependency 'rails-assets-tether'
