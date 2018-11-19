@@ -29,6 +29,24 @@
 
                   var $target = $(context.invoke('restoreTarget').closest('figure'));
                   $target.addClass('width-100');
+                  $target.removeClass('width-75');
+                  $target.removeClass('width-50');
+                  $target.removeClass('width-25');
+                  $target.removeClass('width-15');
+
+                  context.invoke('afterCommand');
+                }
+              }).render();
+            });
+            context.memo('button.spina-imageSize75', function () {
+              return ui.button({
+                contents: '<span class="note-fontsize-10">75%</span>',
+                click: function() {
+                  context.invoke('beforeCommand');
+
+                  var $target = $(context.invoke('restoreTarget').closest('figure'));
+                  $target.removeClass('width-100');
+                  $target.addClass('width-75');
                   $target.removeClass('width-50');
                   $target.removeClass('width-25');
                   $target.removeClass('width-15');
@@ -44,6 +62,7 @@
                   context.invoke('beforeCommand');
                   var $target = $(context.invoke('restoreTarget').closest('figure'));
                   $target.removeClass('width-100');
+                  $target.removeClass('width-75');
                   $target.addClass('width-50');
                   $target.removeClass('width-25');
                   $target.removeClass('width-15');
@@ -59,6 +78,7 @@
                   context.invoke('beforeCommand');
                   var $target = $(context.invoke('restoreTarget').closest('figure'));
                   $target.removeClass('width-100');
+                  $target.removeClass('width-75');
                   $target.removeClass('width-50');
                   $target.addClass('width-25');
                   $target.removeClass('width-15');
@@ -73,6 +93,7 @@
                   context.invoke('beforeCommand');
                   var $target = $(context.invoke('restoreTarget').closest('figure'));
                   $target.removeClass('width-100');
+                  $target.removeClass('width-75');
                   $target.removeClass('width-50');
                   $target.removeClass('width-25');
                   $target.addClass('width-15');
